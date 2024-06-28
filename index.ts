@@ -8,7 +8,44 @@ async function initMap(): Promise<void> {
   });
 }
 
-initMap();
+function initMap(): void {
+  const map = new google.maps.Map(
+    document.getElementById("map") as HTMLElement,
+    {
+      zoom: 3,
+      center: { lat: -28.024, lng: 140.887 },
+    }
+  );
+
+  const infoWindow = new google.maps.InfoWindow({
+    content: "",
+    disableAutoPan: true,
+  });
+
+  // Create an array of alphabetical characters used to label the markers.
+  const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+  // Add some markers to the map.
+  const markers = locations.map((position, i) => {
+    const label = labels[i % labels.length];
+    const marker = new google.maps.Marker({
+      position,
+      label,
+    });
+
+    // markers can only be keyboard focusable when they have click listeners
+    // open info window when marker is clicked
+    marker.addListener("click", () => {
+      infoWindow.setContent(label);
+      infoWindow.open(map, marker);
+    });
+
+    return marker;
+  });
+
+  // Add a marker clusterer to manage the markers.
+  new MarkerClusterer({ markers, map });
+}
 
 const locations = [
 　　{ lat: 35.6895, lng: 139.6917 },
@@ -34,3 +71,10 @@ const locations = [
     { lat: 35.6909, lng: 139.7003 },
     { lat: 35.6654, lng: 139.7389 }
 ];
+
+declare global {
+  interface Window {
+    initMap: () => void;
+  }
+}
+window.initMap = initMap;
