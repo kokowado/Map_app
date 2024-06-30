@@ -61,11 +61,11 @@ function initMap() {
     content: contentString,
     ariaLabel: "Uluru",
   });
-  /*const marker = new google.maps.Marker({
+  const marker = new google.maps.Marker({
     position: uluru,
     map,
     title: "Uluru (Ayers Rock)",
-  });*/
+  });
 
   marker.addListener("click", () => {
     infowindow.open({
@@ -73,5 +73,5 @@ function initMap() {
       map,
     });
   });
-
+}
 window.initMap = initMap;
