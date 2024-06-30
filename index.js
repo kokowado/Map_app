@@ -72,6 +72,5 @@ initMap();
       map,
     });
   });
-}
 
 window.initMap = initMap;
