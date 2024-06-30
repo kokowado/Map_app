@@ -1,4 +1,4 @@
-
+/*
 // Initialize and add the map
 let map;
 
@@ -26,15 +26,16 @@ async function initMap() {
 }
 
 initMap();
+*/
 
 // This example displays a marker at the center of Australia.
 // When the user clicks the marker, an info window opens.
-/*function initMap() {
+function initMap() {
   const uluru = { lat: -25.363, lng: 131.044 };
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 4,
     center: uluru,
-  });*/
+  });
   const contentString =
     '<div id="content">' +
     '<div id="siteNotice">' +
