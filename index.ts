@@ -1,4 +1,4 @@
-/*
+
 // Initialize and add the map
 let map;
 async function initMap(): Promise<void> {
@@ -29,10 +29,10 @@ async function initMap(): Promise<void> {
 }
 
 initMap();
-*/
+
 // This example displays a marker at the center of Australia.
 // When the user clicks the marker, an info window opens.
-
+/*
 function initMap(): void {
   const uluru = { lat: -25.363, lng: 131.044 };
   const map = new google.maps.Map(
@@ -42,7 +42,7 @@ function initMap(): void {
       center: uluru,
     }
   );
-
+*/
   const contentString =
     '<div id="content">' +
     '<div id="siteNotice">' +
