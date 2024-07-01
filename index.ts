@@ -14,7 +14,7 @@ async function initMap(): Promise<void> {
   map = new Map(
     document.getElementById('map') as HTMLElement,
     {
-      zoom: 4,
+      zoom: 6,
       center: position,
       mapId: 'DEMO_MAP_ID',
     }
