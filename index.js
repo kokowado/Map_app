@@ -1,4 +1,4 @@
-
+/*
 // Initialize and add the map
 let map;
 async function initMap() {
@@ -23,7 +23,8 @@ async function initMap() {
     title: "Uluru",
   });
 }
-
+initMap();
+*/
 // This example displays a marker at the center of Australia.
 // When the user clicks the marker, an info window opens.
 function initMap2() {
@@ -57,13 +58,13 @@ function initMap2() {
     content: contentString,
     ariaLabel: "Uluru",
   });
-  /*
+  
   const marker = new google.maps.Marker({
     position: uluru,
     map,
     title: "Uluru (Ayers Rock)",
   });
-*/
+  
   marker.addListener("click", () => {
     infowindow.open({
       anchor: marker,
@@ -72,4 +73,3 @@ function initMap2() {
   });
 }
 window.initMap2 = initMap2;
-initMap();
