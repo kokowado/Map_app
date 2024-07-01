@@ -29,11 +29,11 @@ async function initMap(): Promise<void> {
 }
 
 initMap();
-/*
+
 // This example displays a marker at the center of Australia.
 // When the user clicks the marker, an info window opens.
 
-function initMap(): void {
+function initMap2(): void {
   const uluru = { lat: -25.363, lng: 131.044 };
   const map = new google.maps.Map(
     document.getElementById("map") as HTMLElement,
@@ -86,8 +86,7 @@ function initMap(): void {
 
 declare global {
   interface Window {
-    initMap: () => void;
+    initMap2: () => void;
   }
 }
-window.initMap = initMap;
-*/
+window.initMap2 = initMap2;
