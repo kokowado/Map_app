@@ -1,6 +1,6 @@
+/*
 // Initialize and add the map
 let map;
-/*
 async function initMap(): Promise<void> {
   // The location of Uluru
   const position = { lat: -25.344, lng: 131.031 };
@@ -89,4 +89,3 @@ declare global {
   }
 }
 window.initMap2 = initMap2;
-
