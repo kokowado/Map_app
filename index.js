@@ -1,4 +1,4 @@
-/*
+
 // Initialize and add the map
 let map;
 async function initMap() {
@@ -24,7 +24,7 @@ async function initMap() {
   });
 }
 initMap();
-*/
+/*
 // This example displays a marker at the center of Australia.
 // When the user clicks the marker, an info window opens.
 function initMap2() {
@@ -73,3 +73,4 @@ function initMap2() {
   });
 }
 window.initMap2 = initMap2;
+*/
