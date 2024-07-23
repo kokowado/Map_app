@@ -49,6 +49,8 @@ async function initMap() {
     ariaLabel: "Uluru",
   });
 
+  const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
   const markers = locations.map((position, i) => {
     const label = labels[i % labels.length];
     const marker = new google.maps.Marker({
