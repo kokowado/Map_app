@@ -94,7 +94,6 @@ async function initMap() {
 ];
 initMap();
 */
-
 // Initialize and add the map
 let map;
 async function initMap() {
@@ -190,8 +189,8 @@ async function initMap() {
 
     return marker;
   });
+
   new MarkerClusterer({ markers, map });
 }
 
 initMap();
-
