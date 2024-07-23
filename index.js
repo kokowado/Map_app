@@ -190,7 +190,7 @@ async function initMap() {
     return marker;
   });
 
-  new MarkerClusterer({ markers, map });
+  new markerClusterer.MarkerClusterer({ markers, map });
 }
 
 initMap();
