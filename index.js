@@ -65,8 +65,8 @@ async function initMap() {
     });
   });
 
-  new MarkerClusterer({ markers, map });
-}
+  /*new MarkerClusterer({ markers, map });*/
+
   const locations = [
   { lat: -31.56391, lng: 147.154312 },
   { lat: -33.718234, lng: 150.363181 },
@@ -92,4 +92,5 @@ async function initMap() {
   { lat: -42.735258, lng: 147.438 },
   { lat: -43.999792, lng: 170.463352 },
 ];
+}
 initMap();
