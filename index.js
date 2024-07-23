@@ -1,3 +1,4 @@
+import { MarkerClusterer } from "@googlemaps/markerclusterer";
 /*
 // Initialize and add the map
 let map;
@@ -190,7 +191,7 @@ async function initMap() {
     return marker;
   });
 
-  new markerClusterer.MarkerClusterer({ markers, map });
+  const markerCluster = new MarkerClusterer({ map, markers });
 }
 
 initMap();
