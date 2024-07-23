@@ -97,7 +97,6 @@ initMap();
 
 // Initialize and add the map
 let map;
-import { MarkerClusterer } from "@googlemaps/markerclusterer";
 async function initMap() {
   // The location of Uluru
   const position = { lat: -25.344, lng: 131.031 };
