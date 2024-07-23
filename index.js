@@ -55,14 +55,14 @@ async function initMap() {
       position,
       label,
     });
-
+  }
   marker.addListener("click", () => {
     infowindow.open({
       anchor: marker,
       map,
     });
   });
-}
+  
 new MarkerClusterer({ markers, map });
   const locations = [
   { lat: -31.56391, lng: 147.154312 },
