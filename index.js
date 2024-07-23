@@ -17,7 +17,7 @@ async function initMap() {
   });
   
   // The marker, positioned at Uluru
-  /*const marker = new AdvancedMarkerView({
+ /* const marker = new AdvancedMarkerView({
     map: map,
     position: position,
     title: "Uluru",
@@ -62,7 +62,7 @@ async function initMap() {
       map,
     });
   });
-  
+} 
 new MarkerClusterer({ markers, map });
   const locations = [
   { lat: -31.56391, lng: 147.154312 },
